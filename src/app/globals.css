@@ -1,27 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+    .bg-primary {
+        @apply bg-gradient-to-br from-orange-300 to-orange-500;
+    }
+    .text-primary {
+        @apply bg-clip-text text-transparent bg-gradient-to-br from-orange-300 to-orange-500;
+    }
+    .text-primary-hover {
+        @apply hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br hover:from-orange-300 hover:to-orange-500;
+    }
+    .border-primary {
+        @apply border-orange-200;
+    }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    .bg-primary-hover {
+        @apply hover:bg-gradient-to-br hover:from-amber-300 hover:to-orange-400;
+    }
 }
