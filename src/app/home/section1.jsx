@@ -25,7 +25,7 @@ export default function Section1() {
             <div className="py-24 sm:py-32 lg:pb-40">
                 <div className="px-6 mx-auto max-w-7xl lg:px-8">
                     <div className="max-w-5xl mx-auto text-center">
-                        <h1 className="text-4xl font-bold tracking-normal text-zinc-700 md:text-6xl lg:text-8xl">
+                        <h1 className="text-[42px] leading-tight font-bold tracking-normal text-zinc-700 md:text-6xl lg:text-8xl">
                             Hello Folks! <span className="text-transparent bg-clip-text text-primary">Welcome</span> to the my journey
                         </h1>
                         <p className="mt-6 font-medium leading-8 md:mt-8 lg:mt-12 text-md md:text-2xl text-zinc-400">
