@@ -37,8 +37,8 @@ export default function Navbar() {
             name: "Home",
         },
         {
-            href: "/blog",
-            name: "Blog",
+            href: "/post",
+            name: "Post",
         },
         {
             href: "/project",
@@ -64,9 +64,9 @@ export default function Navbar() {
                 style={{
                     transform: `translateX(${completion - 100}%)`,
                 }}
-                className={`absolute top-0 w-full transition-transform duration-150 h-2 bg-purple-400`}
+                className={`absolute top-0 w-full transition-transform duration-150 h-2 bg-green-400`}
             />
-            <div className="items-center mx-auto mt-8 bg-white border-2 rounded-full backdrop-blur-sm border-primary">
+            <div className="items-center mx-auto mt-8 bg-white border-2 border-orange-400 rounded-full backdrop-blur-sm">
                 <ul className="flex list-none">
                     {navLink.map((link) => {
                         const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);

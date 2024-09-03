@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Section1() {
     return (
-        <div className="relative isolate pt-14">
+        <section className="relative isolate pt-14">
             <div className="absolute inset-x-0 overflow-hidden -top-40 -z-10 transform-gpu blur-3xl sm:-top-80" aria-hidden="true">
                 <div
                     className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-indigo-300 to-fuchsia-300 opacity-40 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
@@ -14,7 +14,7 @@ export default function Section1() {
                     }}
                 />
             </div>
-            <svg className="absolute inset-0 -z-10 h-full w-full stroke-orange-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+            <svg className="absolute inset-0 -z-10 h-full w-full stroke-green-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
                 <defs>
                     <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width={200} height={200} x="50%" y={-1} patternUnits="userSpaceOnUse">
                         <path d="M.5 200V.5H200" fill="none" />
@@ -28,19 +28,22 @@ export default function Section1() {
                         <h1 className="text-[42px] leading-tight font-bold tracking-normal text-zinc-700 md:text-6xl lg:text-8xl">
                             Hello Folks! <span className="text-transparent bg-clip-text text-primary">Welcome</span> to the my journey
                         </h1>
-                        <p className="mt-6 font-medium leading-8 md:mt-8 lg:mt-12 text-md md:text-2xl text-zinc-400">
-                            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.{" "}
-                        </p>
+
+                        <p className="mt-6 font-medium leading-8 md:mt-8 lg:mt-12 text-md md:text-2xl text-zinc-400">A visual designer who live in Indonesia, experienced 2 years in mobile apps design, web design, and .</p>
                         <div className="flex items-center justify-center mt-10 group gap-x-6">
-                            <Link
-                                href="/project"
-                                className="px-8 py-4 text-sm font-semibold text-white border border-orange-200 rounded-md bg-primary-hover bg-primary lg:text-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400"
-                            >
-                                Show Project{" "}
-                            </Link>
-                            <Link href="/about" className="text-sm font-semibold leading-6 text-orange-300 animate-bounce lg:text-xl">
-                                Get in Touch <span aria-hidden="true">→</span>
-                            </Link>
+                            <button>
+                                <Link
+                                    href="/project"
+                                    className="px-8 py-4 text-sm font-semibold text-white border border-orange-500 rounded-md bg-primary-hover bg-primary lg:text-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-100"
+                                >
+                                    Show Project{" "}
+                                </Link>
+                            </button>
+                            <button>
+                                <Link href="/about" className="text-sm font-semibold leading-6 text-orange-300 animate-bounce lg:text-xl">
+                                    Get in Touch <span aria-hidden="true">→</span>
+                                </Link>
+                            </button>
                         </div>
                     </div>
                     <div className="flow-root mt-24 sm:mt-32">
@@ -50,6 +53,6 @@ export default function Section1() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

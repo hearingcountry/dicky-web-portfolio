@@ -1,12 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #dcfce7;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #22c55e;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #c2410c;
+}
+
 @layer base {
     .bg-primary {
-        @apply bg-gradient-to-br from-orange-300 to-orange-500;
+        @apply bg-gradient-to-br from-orange-400 to-orange-500;
     }
     .text-primary {
-        @apply bg-clip-text text-transparent bg-gradient-to-br from-orange-300 to-orange-500;
+        @apply bg-clip-text text-transparent bg-gradient-to-br from-orange-400 to-orange-500;
     }
     .text-primary-hover {
         @apply hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-br hover:from-orange-300 hover:to-orange-500;
@@ -16,6 +39,6 @@
     }
 
     .bg-primary-hover {
-        @apply hover:bg-gradient-to-br hover:from-amber-300 hover:to-orange-400;
+        @apply hover:bg-gradient-to-br hover:from-orange-400 hover:to-orange-300;
     }
 }
