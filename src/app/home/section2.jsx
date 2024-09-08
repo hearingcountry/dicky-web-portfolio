@@ -1,15 +1,33 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Section2() {
     return (
-        <div className="overflow-hidden bg-white">
+        <section className="relative py-24 bg-[#fffbf6] isolate">
+            <svg className="absolute inset-0 -z-10 h-full w-full stroke-orange-400 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+                <defs>
+                    <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width={200} height={200} x="50%" y={-1} patternUnits="userSpaceOnUse">
+                        <path d="M.5 200V.5H200" fill="none" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" strokeWidth={0} fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
+            </svg>
             <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
+                <h2 className="mb-12 text-4xl font-semibold text-center md:mb-16 lg:mb-24 text-primary md:text-5xl lg:text-7xl">Featured Projects</h2>
                 <div className="grid grid-cols-1 mb-32 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
-                    <div className="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+                    <div className="px-6 lg:px-0 lg:pr-4 lg:pt-4 ">
                         <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-lg">
-                            <h2 className="text-base font-semibold leading-7 text-primary">Deploy faster</h2>
-                            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</p>
-                            <p className="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                            <h2 className="mb-4 text-3xl font-bold tracking-tight text-zinc-700 sm:text-4xl">Rapspoint</h2>
+                            <div className="flex flex-wrap w-full gap-2">
+                                <p className="inline-block px-3 text-xs font-medium leading-7 text-white bg-green-500 border border-green-300 rounded-full py md:text-md">Product Designer</p>
+                                <p className="inline-block px-3 text-xs font-medium leading-7 text-white border rounded-full py border-violet-300 bg-violet-500 md:text-md">Frontend Developer</p>
+                            </div>
+                            <p className="mt-4 leading-8 text-zinc-500 text-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                            <button className="px-8 py-3 mt-4 text-sm font-semibold text-white border border-orange-200 rounded-md bg-primary-hover bg-primary lg:text-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400">
+                                <Link href="https://rapspoint.com" target="_blank">
+                                    Visit Website
+                                </Link>
+                            </button>
                         </div>
                     </div>
                     <div className="sm:px-6 lg:px-0">
@@ -21,7 +39,7 @@ export default function Section2() {
                                     alt="Product screenshot"
                                     width={2432}
                                     height={1442}
-                                    className="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
+                                    className="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-zinc-800 ring-1 ring-white/10"
                                 />
                             </div>
                             <div className="absolute inset-0 pointer-events-none ring-1 ring-inset ring-black/10 sm:rounded-3xl" aria-hidden="true" />
@@ -32,8 +50,8 @@ export default function Section2() {
                     <div className="px-6 lg:px-0 lg:pr-4 lg:pt-4">
                         <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-lg">
                             <h2 className="text-base font-semibold leading-7 text-primary">Deploy faster</h2>
-                            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</p>
-                            <p className="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                            <p className="mt-2 text-3xl font-bold tracking-tight text-zinc-700 sm:text-4xl">A better workflow</p>
+                            <p className="mt-6 text-lg leading-8 text-zinc-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
                         </div>
                     </div>
                     <div className="sm:px-6 lg:px-0">
@@ -45,7 +63,7 @@ export default function Section2() {
                                     alt="Product screenshot"
                                     width={2432}
                                     height={1442}
-                                    className="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-gray-800 ring-1 ring-white/10"
+                                    className="-mb-12 w-[57rem] max-w-none rounded-tl-xl bg-zinc-800 ring-1 ring-white/10"
                                 />
                             </div>
                             <div className="absolute inset-0 pointer-events-none ring-1 ring-inset ring-black/10 sm:rounded-3xl" aria-hidden="true" />
@@ -53,6 +71,6 @@ export default function Section2() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
