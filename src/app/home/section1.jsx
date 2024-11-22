@@ -29,7 +29,10 @@ export default function Section1() {
                             Hello Folks! <span className="text-transparent bg-clip-text text-primary">Welcome</span> to the my journey
                         </h1>
 
-                        <p className="mt-6 font-medium leading-8 md:mt-8 lg:mt-12 text-md md:text-2xl text-zinc-400">A visual designer who live in Indonesia, experienced 2 years in mobile apps design, web design, and .</p>
+                        <p className="mt-6 leading-8 md:mt-8 lg:mt-12 text-md md:text-xl text-zinc-400">
+                            A creative visual designer based in Indonesia with two years of professional experience specializing in user interface and digital product design. Proficient in creating engaging designs for mobile applications
+                            and websites, with a strong understanding of user experience principles.{" "}
+                        </p>
                         <div className="flex items-center justify-center mt-10 group gap-x-6">
                             <button>
                                 <Link

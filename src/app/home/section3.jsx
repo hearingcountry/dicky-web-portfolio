@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Section3() {
-    console.log(posts);
     return (
         <section className="py-24 bg-white sm:py-32">
             <div className="px-6 mx-auto max-w-7xl lg:px-8">
@@ -17,7 +16,6 @@ export default function Section3() {
                             <Image width={500} height={500} src={post.imageUrl} alt="" className="absolute inset-0 object-cover w-full h-full transition-all duration-300 group-hover:scale-125 -z-10" />
                             <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
                             <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-
                             <div className="flex flex-wrap items-center overflow-hidden text-sm leading-6 text-gray-300 gap-y-1">
                                 <time dateTime={post.datetime} className="mr-8">
                                     {post.date}
@@ -35,7 +33,7 @@ export default function Section3() {
                 <div className="flex justify-center mt-8">
                     <button>
                         <Link
-                            href="/blog"
+                            href="/post"
                             className="px-16 py-4 text-sm font-semibold text-white border border-orange-200 rounded-md bg-primary-hover bg-primary lg:text-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400"
                         >
                             Show All Posts{" "}

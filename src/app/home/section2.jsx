@@ -4,14 +4,6 @@ import Link from "next/link";
 export default function Section2() {
     return (
         <section className="relative py-24 bg-[#fffbf6] isolate">
-            <svg className="absolute inset-0 -z-10 h-full w-full stroke-orange-400 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-                <defs>
-                    <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width={200} height={200} x="50%" y={-1} patternUnits="userSpaceOnUse">
-                        <path d="M.5 200V.5H200" fill="none" />
-                    </pattern>
-                </defs>
-                <rect width="100%" height="100%" strokeWidth={0} fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
-            </svg>
             <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
                 <h2 className="mb-12 text-4xl font-semibold text-center md:mb-16 lg:mb-24 text-primary md:text-5xl lg:text-7xl">Featured Projects</h2>
                 <div className="grid grid-cols-1 mb-32 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
