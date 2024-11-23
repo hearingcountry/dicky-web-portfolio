@@ -31,7 +31,7 @@ export default function Section1() {
 
                         <p className="mt-6 leading-8 md:mt-8 lg:mt-12 text-md md:text-xl text-zinc-400">
                             A creative visual designer based in Indonesia with two years of professional experience specializing in user interface and digital product design. Proficient in creating engaging designs for mobile applications
-                            and websites, with a strong understanding of user experience principles.{" "}
+                            and websites, with a strong understanding of user experience principles{" "}
                         </p>
                         <div className="flex items-center justify-center mt-10 group gap-x-6">
                             <button>
