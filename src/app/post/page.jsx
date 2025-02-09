@@ -1,5 +1,9 @@
 import Image from "next/image";
 import { posts } from "../../utils/dataPost";
+export const metadata = {
+    title: "Dicky Surya | Post",
+    description: "Post Dicky Surya Nanda",
+};
 
 export default function Post() {
     return (

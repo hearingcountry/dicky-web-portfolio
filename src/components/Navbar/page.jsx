@@ -64,7 +64,7 @@ export default function Navbar() {
                 style={{
                     transform: `translateX(${completion - 100}%)`,
                 }}
-                className={`absolute top-0 w-full transition-transform duration-150 h-2 bg-green-400`}
+                className={`absolute top-0 w-full transition-transform duration-150 h-3 bg-gradient-to-b from-violet-400 to-violet-500`}
             />
             <div className="items-center mx-auto mt-8 bg-white border-2 border-orange-400 rounded-full backdrop-blur-sm">
                 <ul className="flex list-none">

@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import Section1 from "../app/home/section1";
 import Section2 from "../app/home/section2";
 import Section3 from "../app/home/section3";

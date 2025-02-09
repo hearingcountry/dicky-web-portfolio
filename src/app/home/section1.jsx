@@ -14,7 +14,7 @@ export default function Section1() {
                     }}
                 />
             </div>
-            <svg className="absolute inset-0 -z-10 h-full w-full stroke-green-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+            <svg className="absolute inset-0 -z-10 h-full w-full stroke-orange-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
                 <defs>
                     <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width={200} height={200} x="50%" y={-1} patternUnits="userSpaceOnUse">
                         <path d="M.5 200V.5H200" fill="none" />
@@ -25,13 +25,18 @@ export default function Section1() {
             <div className="py-24 sm:py-32 lg:pb-40">
                 <div className="px-6 mx-auto max-w-7xl lg:px-8">
                     <div className="max-w-5xl mx-auto text-center">
-                        <h1 className="text-[42px] leading-tight font-bold tracking-normal text-zinc-700 md:text-6xl lg:text-8xl">
+                        <div className="inline-block">
+                            <div className="flex items-center gap-2 px-6 py-2 mb-4 bg-green-100 border border-green-500 rounded-full md:mb-8">
+                                <span className="w-3 h-3 bg-green-500 rounded-full animate-bounce"></span>
+                                <p className="text-sm font-medium text-green-500 md:text-lg">Available for new project</p>
+                            </div>
+                        </div>
+                        <h1 className="text-[48px] leading-tight font-bold tracking-normal text-zinc-700 md:text-6xl lg:text-8xl">
                             Hello Folks! <span className="text-transparent bg-clip-text text-primary">Welcome</span> to the my journey
                         </h1>
-
-                        <p className="mt-6 leading-8 md:mt-8 lg:mt-12 text-md md:text-xl text-zinc-400">
-                            A creative visual designer based in Indonesia with two years of professional experience specializing in user interface and digital product design. Proficient in creating engaging designs for mobile applications
-                            and websites, with a strong understanding of user experience principles{" "}
+                        <p className="mt-6 leading-8 text-md md:mt-8 lg:mt-12 md:text-xl text-zinc-400">
+                            A creative visual designer based in Indonesia with 2 years of professional experience specializing in user interface and digital product design. Proficient in creating engaging designs for mobile applications and
+                            websites.
                         </p>
                         <div className="flex items-center justify-center mt-10 group gap-x-6">
                             <button>
@@ -43,7 +48,7 @@ export default function Section1() {
                                 </Link>
                             </button>
                             <button>
-                                <Link href="/about" className="text-sm font-semibold leading-6 text-orange-300 animate-bounce lg:text-xl">
+                                <Link href="/about" className="text-sm font-semibold leading-6 text-primary lg:text-xl">
                                     Get in Touch <span aria-hidden="true">→</span>
                                 </Link>
                             </button>
