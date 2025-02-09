@@ -1,5 +1,20 @@
 import Link from "next/link";
-import Comjam from "../home/ComJam Light.jpg";
+import Comjam from "../../image/ComJam Light.webp";
+import Neosen from "../../image/Neosen.webp";
+import Galang from "../../image/Galang.webp";
+import Bookhub from "../../image/Bookhub.webp";
+import Mashup from "../../image/Mashup.webp";
+import NeosenGrid from "../../image/Neosen Grid.webp";
+import NeosenWeb from "../../image/Neosen Web.webp";
+import Storify from "../../image/Storify.webp";
+import ComjamDark from "../../image/ComJam Dark.webp";
+import NeosenMobile from "../../image/Neosen Mobile.webp";
+import Ruang from "../../image/Ruang.webp";
+import HaloBus from "../../image/HaloBus.webp";
+import GalangGrid from "../../image/GalangGrid.webp";
+import GalangShow from "../../image/GalangShow.webp";
+import Warasfit from "../../image/Warasfit.webp";
+import Elephant from "../../image/Elephant.webp";
 import Image from "next/image";
 
 export const metadata = {
@@ -96,12 +111,12 @@ export default function About() {
                         <div class="grid grid-cols-2 gap-4">
                             <div className="group">
                                 <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                    <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                    <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Bookhub} alt="Bookhub" />
                                 </div>
                             </div>
                             <div className="group">
                                 <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                    <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                    <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Mashup} alt="Mashup" />
                                 </div>
                             </div>
                         </div>
@@ -109,18 +124,18 @@ export default function About() {
                     <div class="grid gap-4">
                         <div className="group">
                             <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Neosen} alt="Neosen" />
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-4">
                             <div className="group">
                                 <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                    <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                    <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={NeosenGrid} alt="Neosen Grid" />
                                 </div>
                             </div>
                             <div className="group">
                                 <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                    <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                    <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Storify} alt="Storify" />
                                 </div>
                             </div>
                         </div>
@@ -128,58 +143,58 @@ export default function About() {
                     <div class="grid grid-cols-2 gap-4">
                         <div className="group">
                             <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={ComjamDark} alt="Comjam Dark" />
                             </div>
                         </div>
                         <div className="group">
                             <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={NeosenMobile} alt="Neosen Mobile" />
                             </div>
                         </div>
                         <div className="group">
                             <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Ruang} alt="Ruang" />
                             </div>
                         </div>
                         <div className="group">
                             <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid gap-4">
-                        <div className="group">
-                            <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={HaloBus} alt="Halo Bus" />
                             </div>
                         </div>
                     </div>
                     <div class="grid gap-4">
                         <div className="group">
                             <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Galang} alt="Galang" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div className="group">
+                            <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
+                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={NeosenWeb} alt="Neosen Web" />
                             </div>
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div className="group">
                             <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={GalangGrid} alt="Galang Grid" />
                             </div>
                         </div>
                         <div className="group">
                             <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={GalangShow} alt="Galang S" />
                             </div>
                         </div>
                         <div className="group">
                             <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Warasfit} alt="Waras Fit" />
                             </div>
                         </div>
                         <div className="group">
                             <div className="relative overflow-hidden group-hover:cursor-pointer group-hover:border-2 group-hover:border-orange-500 transition-transform duration-1000 rounded-lg group-hover:scale-[0.99]">
-                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Comjam} alt="Comjam" />
+                                <Image class="h-auto max-w-full transition-transform duration-1000 rounded-lg group-hover:scale-105" src={Elephant} alt="Elephant" />
                             </div>
                         </div>
                     </div>
