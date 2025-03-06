@@ -199,6 +199,18 @@ export default function About() {
                         </div>
                     </div>
                 </div>
+                <div className="flex justify-center mt-12">
+                    <button>
+                        <Link
+                            href="https://dribbble.com/hearingcountry"
+                            target="_blank"
+                            className="px-8 py-4 text-sm font-semibold text-white border border-orange-500 rounded-md bg-primary-hover bg-primary lg:text-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-100"
+                        >
+                            Show More{" "}
+                        </Link>
+                    </button>
+                </div>
+
                 {/* <div className="flex flex-col max-w-2xl gap-8 mx-auto mt-16 lg:mx-0 lg:mt-20 lg:max-w-none lg:flex-row lg:items-end">
                     <div className="flex flex-col-reverse justify-between p-8 gap-x-16 gap-y-8 rounded-2xl bg-gray-50 sm:w-3/4 sm:max-w-md sm:flex-row-reverse sm:items-end lg:w-72 lg:max-w-none lg:flex-none lg:flex-col lg:items-start">
                         <p className="flex-none text-3xl font-bold tracking-tight text-gray-900">250k</p>

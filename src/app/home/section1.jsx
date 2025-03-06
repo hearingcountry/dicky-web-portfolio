@@ -35,7 +35,7 @@ export default function Section1() {
                             Hello Folks! <span className="text-transparent bg-clip-text text-primary">Welcome</span> to the my journey
                         </h1>
                         <p className="mt-6 leading-8 text-md md:mt-8 lg:mt-12 md:text-xl text-zinc-400">
-                            A creative visual designer based in Indonesia with 2 years of professional experience specializing in user interface and digital product design. Proficient in creating engaging designs for mobile applications and
+                            A creative visual designer based in Indonesia with 1 year of professional experience specializing in user interface and digital product design. Proficient in creating engaging designs for mobile applications and
                             websites.
                         </p>
                         <div className="flex items-center justify-center mt-10 group gap-x-6">
