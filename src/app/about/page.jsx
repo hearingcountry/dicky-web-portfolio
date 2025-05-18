@@ -16,6 +16,7 @@ import GalangShow from "../../image/GalangShow.webp";
 import Warasfit from "../../image/Warasfit.webp";
 import Elephant from "../../image/Elephant.webp";
 import Image from "next/image";
+import Profile from "../../image/profile.webp";
 
 export const metadata = {
     title: "Dicky Surya | About",
@@ -38,7 +39,7 @@ const timeline = [
     {
         name: "PT Awan Data Indonesia",
         description: "UI/UX Designer",
-        date: "Apr 2024 - now",
+        date: "Apr 2024 - Mar 2025",
         dateTime: "2024-04",
     },
 ];
@@ -55,7 +56,7 @@ export default function About() {
                         <div className="max-w-xl mt-6 lg:mt-0 xl:col-end-1 xl:row-start-1">
                             <p className="text-lg leading-8 text-zinc-500">
                                 {`
-                                    Hello! I'm Dicky Surya Nanda, a technology student passionate about creating innovative product designs. With a focus on user-centered solutions, I've led 4+ nationally recognized projects. My expertise covers the complete design process - from user research and wireframing to prototype development.
+                                    A final-year Information Technology student with 1+ year of hands-on experience as a UI/UX Designer in both B2B cloud computing & data center platforms and B2C online gaming services. Contributed to real-world product development through end-to-end interface design, dashboard optimization, and scalable design systems. Recognized with 4+ national awards in design and technology competitions, and passionate about building impactful digital experiences that align user needs with business goals.
                                 `}
                             </p>
                             <button className="mt-12">
@@ -68,11 +69,7 @@ export default function About() {
                             </button>
                         </div>
 
-                        <img
-                            src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
-                            alt=""
-                            className="mt-12 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
-                        />
+                        <Image src={Profile} alt="Image Profile" className="mt-12 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36" />
                     </div>
                 </div>
                 <div className="absolute inset-x-0 bottom-0 h-24 -z-10 bg-gradient-to-t from-white sm:h-32" />
