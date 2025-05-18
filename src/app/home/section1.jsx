@@ -1,4 +1,4 @@
-import Comjam from "../../image/ComJam Light.webp";
+import Comjam from "../../image/ComJamLight.webp";
 import Image from "next/image";
 import Link from "next/link";
 
