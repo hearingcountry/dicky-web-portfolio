@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Comjam from "../../image/ComJamLight.webp";
+import Comjam from "../../image/ComjamLight.webp";
 import Neosen from "../../image/Neosen.webp";
 import Galang from "../../image/Galang.webp";
 import Bookhub from "../../image/Bookhub.webp";
@@ -7,7 +7,7 @@ import Mashup from "../../image/Mashup.webp";
 import NeosenGrid from "../../image/NeosenGrid.webp";
 import NeosenWeb from "../../image/NeosenWeb.webp";
 import Storify from "../../image/Storify.webp";
-import ComjamDark from "../../image/ComJamDark.webp";
+import ComjamDark from "../../image/ComjamDark.webp";
 import NeosenMobile from "../../image/NeosenMobile.webp";
 import Ruang from "../../image/Ruang.webp";
 import HaloBus from "../../image/HaloBus.webp";
@@ -219,7 +219,7 @@ export default function About() {
                     <div className="flex flex-col-reverse justify-between p-8 bg-gray-900 gap-x-16 gap-y-8 rounded-2xl sm:flex-row-reverse sm:items-end lg:w-full lg:max-w-sm lg:flex-auto lg:flex-col lg:items-start lg:gap-y-44">
                         <p className="flex-none text-3xl font-bold tracking-tight text-white">$8.9 billion</p>
                         <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
-                            <p className="text-lg font-semibold tracking-tight text-white">We’re proud that our customers have made over $8 billion in total revenue.</p>
+                            <p className="text-lg font-semibold tracking-tight text-white">We're proud that our customers have made over $8 billion in total revenue.</p>
                             <p className="mt-2 text-base leading-7 text-gray-400">Eu duis porta aliquam ornare. Elementum eget magna egestas.</p>
                         </div>
                     </div>
