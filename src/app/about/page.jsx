@@ -54,9 +54,9 @@ export default function About() {
                     <div className="max-w-2xl mx-auto lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
                         <h1 className="max-w-2xl text-4xl font-bold leading-[48px] md:leading-[64px] tracking-tight md:text-5xl text-zinc-700 lg:col-span-2 xl:col-auto">Get in Touch</h1>
                         <div className="max-w-xl mt-6 lg:mt-0 xl:col-end-1 xl:row-start-1">
-                            <p className="text-lg leading-8 text-zinc-500">
+                            <p className="text-sm md:text-lg leading-6 md:leading-10 leading-8 text-zinc-500">
                                 {`
-                                    A final-year Information Technology student with 1+ year of hands-on experience as a UI/UX Designer in both B2B cloud computing & data center platforms and B2C online gaming services. Contributed to real-world product development through end-to-end interface design, dashboard optimization, and scalable design systems. Recognized with 4+ national awards in design and technology competitions, and passionate about building impactful digital experiences that align user needs with business goals.
+                                    A final-year Information Technology student with over 1 year of experience as a UI/UX Designer in both B2B cloud platforms and B2C gaming services. Involved in real-world product development through end-to-end design, dashboard improvements, and scalable design systems. Recipient of 4+ national awards in design and technology, with a strong passion for creating impactful digital experiences that balance user needs and business goals.
                                 `}
                             </p>
                             <button className="mt-12">
@@ -64,12 +64,12 @@ export default function About() {
                                     href="/project"
                                     className="px-8 py-4 text-sm font-semibold text-white border border-orange-500 rounded-md bg-primary-hover bg-primary lg:text-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-100"
                                 >
-                                    Hire Me{" "}
+                                    Download My Resume{" "}
                                 </Link>
                             </button>
                         </div>
 
-                        <Image src={Profile} alt="Image Profile" className="mt-12 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36" />
+                        <Image src={Profile} alt="Image Profile" className="mt-12 aspect-[6/5] w-full max-w-md rounded-2xl object-cover sm:mt-16 lg:mt-0 xl:row-span-2 xl:row-end-2 xl:mt-36" />
                     </div>
                 </div>
                 <div className="absolute inset-x-0 bottom-0 h-24 -z-10 bg-gradient-to-t from-white sm:h-32" />
