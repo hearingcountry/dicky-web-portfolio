@@ -41,8 +41,8 @@ export default function Navbar() {
             name: "Post",
         },
         {
-            href: "/project",
-            name: "Project",
+            href: "/portfolio",
+            name: "Portfolio",
         },
         {
             href: "/about",
@@ -58,20 +58,20 @@ export default function Navbar() {
     const completion = useReadingProgress();
 
     return (
-        <nav className="fixed z-50 flex justify-center w-full">
+        <nav className="flex fixed z-50 justify-center w-full">
             <span
                 id="progress-bar"
                 style={{
                     transform: `translateX(${completion - 100}%)`,
                 }}
-                className={`absolute top-0 w-full transition-transform duration-150 h-3 bg-gradient-to-b from-violet-400 to-violet-500`}
+                className={`absolute top-0 w-full h-3 bg-gradient-to-b from-violet-400 to-violet-500 transition-transform duration-150`}
             />
-            <div className="items-center mx-auto mt-8 bg-white border-2 border-orange-400 rounded-full backdrop-blur-sm">
+            <div className="items-center mx-auto mt-8 bg-white rounded-full border-2 border-orange-400 backdrop-blur-sm">
                 <ul className="flex list-none">
                     {navLink.map((link) => {
                         const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
                         return (
-                            <li key={link.name} className="flex-col items-center justify-center px-4 py-2">
+                            <li key={link.name} className="flex-col justify-center items-center px-4 py-2">
                                 <Link href={link.href} className={isActive ? navActive : navInactive}>
                                     {link.name}
                                     <div className={isActive ? pointerActive : ""}></div>
