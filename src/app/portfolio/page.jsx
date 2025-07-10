@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function Project() {
     return (
-        <main className="flex relative flex-col justify-between items-center py-32">
+        <main className="flex relative flex-col justify-between items-center mt-12">
             <div className="overflow-hidden absolute inset-x-0 -top-40 blur-3xl transform-gpu -z-10 sm:-top-80" aria-hidden="true">
                 <div
                     className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-indigo-300 to-fuchsia-300 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"

@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import logo from "../Navbar/logo.svg";
 
 /**
  * React Hook to get the scroll percentage from the page, returns value from 0 to 100
@@ -31,6 +33,8 @@ export function useReadingProgress() {
 }
 
 export default function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     const navLink = [
         {
             href: "/",
@@ -51,36 +55,143 @@ export default function Navbar() {
     ];
 
     const pathname = usePathname();
-
-    const navActive = "font-semibold text-primary text-md md:text-lg";
-    const navInactive = "text-zinc-400 text-md md:text-lg";
-    const pointerActive = "w-2 block h-2 mt-1 rounded-full animate-bounce mx-auto bg-primary";
     const completion = useReadingProgress();
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    // Prevent scroll when mobile menu is open
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+
+        // Cleanup function to reset scroll when component unmounts
+        return () => {
+            document.body.style.overflow = "unset";
+        };
+    }, [isMenuOpen]);
+
     return (
-        <nav className="flex fixed z-50 justify-center w-full">
-            <span
-                id="progress-bar"
-                style={{
-                    transform: `translateX(${completion - 100}%)`,
-                }}
-                className={`absolute top-0 w-full h-3 bg-gradient-to-b from-violet-400 to-violet-500 transition-transform duration-150`}
-            />
-            <div className="items-center mx-auto mt-8 bg-white rounded-full border-2 border-orange-400 backdrop-blur-sm">
-                <ul className="flex list-none">
-                    {navLink.map((link) => {
-                        const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
-                        return (
-                            <li key={link.name} className="flex-col justify-center items-center px-4 py-2">
-                                <Link href={link.href} className={isActive ? navActive : navInactive}>
-                                    {link.name}
-                                    <div className={isActive ? pointerActive : ""}></div>
-                                </Link>
-                            </li>
-                        );
-                    })}
-                </ul>
+        <>
+            <nav className="fixed top-0 z-50 w-full border-b border-gray-200 shadow-sm backdrop-blur-md bg-white/90">
+                {/* Progress Bar */}
+                <div className="absolute top-0 left-0 h-2 bg-gradient-to-r from-orange-400 to-orange-500 transition-all duration-150" style={{ width: `${completion}%` }} />
+
+                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div className="flex justify-between items-center h-16 lg:h-20">
+                        {/* Logo/Brand */}
+                        <div className="flex-shrink-0">
+                            <Link href="/" className="flex items-center transition-transform hover:scale-105">
+                                <Image src={logo} alt="Logo" width={40} height={40} className="w-auto h-8" />
+                            </Link>
+                        </div>
+
+                        {/* Desktop Navigation */}
+                        <div className="hidden md:block">
+                            <div className="flex items-baseline ml-10 space-x-4">
+                                {navLink.map((link) => {
+                                    const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+                                    return (
+                                        <Link
+                                            key={link.name}
+                                            href={link.href}
+                                            className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                                                isActive ? "text-orange-500 bg-orange-50 border-b-2 border-orange-500" : "text-gray-700 hover:text-orange-500 hover:bg-gray-50"
+                                            }`}
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    );
+                                })}
+
+                                {/* Work Together Button - Fixed Animation */}
+                                <a
+                                    href="mailto:dicky.suryananda@gmail.com"
+                                    className="overflow-hidden relative px-6 py-3 text-sm font-medium text-white bg-orange-500 rounded-md transition-all duration-300 group hover:bg-orange-600 hover:shadow-lg hover:scale-105"
+                                >
+                                    <span className="block relative z-10 transition-opacity duration-300 group-hover:opacity-0">Work Together</span>
+                                    <span className="flex absolute inset-0 justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">Let&apos;s Collaborate</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Mobile menu button */}
+                        <div className="md:hidden">
+                            <button
+                                onClick={toggleMenu}
+                                className="inline-flex justify-center items-center p-2 text-gray-700 rounded-md hover:text-orange-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-400"
+                                aria-expanded="false"
+                            >
+                                <span className="sr-only">Open main menu</span>
+                                {/* Hamburger icon */}
+                                <svg className={`${isMenuOpen ? "hidden" : "block"} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                                {/* Close icon */}
+                                <svg className={`${isMenuOpen ? "block" : "hidden"} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            {/* Mobile Navigation Menu - Full Canvas */}
+            <div className={`fixed inset-0 z-40 md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? "visible opacity-100" : "invisible opacity-0"}`}>
+                {/* Backdrop */}
+                <div className="absolute inset-0 backdrop-blur-sm bg-black/50" onClick={() => setIsMenuOpen(false)} />
+
+                {/* Menu Content */}
+                <div className={`relative w-full h-full bg-white transform transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
+                    {/* Header dengan close button */}
+                    <div className="flex justify-end items-center px-6 py-3">
+                        <button onClick={() => setIsMenuOpen(false)} className="p-2 text-gray-700 rounded-md hover:text-orange-500 hover:bg-gray-100">
+                            <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    {/* Navigation Links */}
+                    <div className="flex flex-col justify-between pb-16 h-full">
+                        <div className="px-6 py-4 space-y-2">
+                            {navLink.map((link, index) => {
+                                const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+                                return (
+                                    <Link
+                                        key={link.name}
+                                        href={link.href}
+                                        onClick={() => setIsMenuOpen(false)}
+                                        className={`block px-4 py-3 text-2xl font-semibold rounded-lg transition-all duration-200 hover:translate-x-2 ${isActive ? "text-orange-500 bg-orange-50" : "text-gray-700 hover:text-orange-500"}`}
+                                        style={{
+                                            animationDelay: isMenuOpen ? `${index * 100}ms` : "0ms",
+                                        }}
+                                    >
+                                        {link.name}
+                                    </Link>
+                                );
+                            })}
+                        </div>
+
+                        {/* Mobile Work Together Button - Centered at Bottom */}
+                        <div className="flex justify-center pb-6">
+                            <a
+                                href="mailto:dicky.suryananda@gmail.com"
+                                onClick={() => setIsMenuOpen(false)}
+                                className="overflow-hidden relative px-8 py-4 text-lg font-semibold text-white bg-orange-500 rounded-lg transition-all duration-300 group hover:bg-orange-600 hover:shadow-lg hover:scale-105"
+                            >
+                                <span className="block relative z-10 transition-opacity duration-300 group-hover:opacity-0">Work Together</span>
+                                <span className="flex absolute inset-0 justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">Let&apos;s Collaborate</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </>
     );
 }

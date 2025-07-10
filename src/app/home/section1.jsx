@@ -18,7 +18,6 @@ import Elephant from "../../image/Elephant.webp";
 import Image from "next/image";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
 
 export default function Section1() {
     return (
@@ -40,7 +39,7 @@ export default function Section1() {
                 </defs>
                 <rect width="100%" height="100%" strokeWidth={0} fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
             </svg>
-            <div className="py-24 sm:py-32 lg:pb-40">
+            <div className="pb-16 mt-2 md:mt-4 md:mb-32">
                 <div className="px-6 mx-auto max-w-7xl lg:px-8">
                     <div className="mx-auto max-w-5xl text-left md:text-center">
                         <div className="inline-block">
