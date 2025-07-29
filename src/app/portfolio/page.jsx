@@ -5,13 +5,13 @@ import Galang from "../../image/project/galang.webp";
 import Neosen from "../../image/project/neosen-video.webp";
 
 export const metadata = {
-    title: "Dicky Surya | Project",
+    title: "Dicky Surya | Portfolio",
     description: "Project Dicky Surya Nanda",
 };
 
 export default function Project() {
     return (
-        <main className="flex relative flex-col justify-between items-center mt-12">
+        <main className="flex relative flex-col justify-between items-center mt-12 md:my-24">
             <div className="overflow-hidden absolute inset-x-0 -top-40 blur-3xl transform-gpu -z-10 sm:-top-80" aria-hidden="true">
                 <div
                     className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-indigo-300 to-fuchsia-300 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
@@ -78,7 +78,7 @@ export default function Project() {
                                 </div> */}
 
                                 <Link
-                                    href="#"
+                                    href="/portfolio/maxcloud"
                                     className="group/btn inline-flex items-center px-6 py-3.5 bg-gradient-to-r from-white/15 to-white/10 backdrop-blur-md text-white font-semibold rounded-2xl border border-white/30 hover:from-white/25 hover:to-white/20 transition-all duration-500 hover:scale-105 hover:shadow-xl shadow-blue-500/25"
                                 >
                                     <span className="mr-3">View Project</span>
@@ -235,8 +235,7 @@ export default function Project() {
                             </div>
 
                             <Link
-                                href="https://www.figma.com/proto/0RaQGQfFRaxtEXRCsITkip/TARA?type=design&node-id=1-2&t=2hT6pwMZl5LFGkvp-0&scaling=contain&page-id=0%3A1&fuid=890212016972465992"
-                                target="_blank"
+                                href="/portfolio/tara"
                                 className="inline-flex justify-center items-center px-6 py-3 w-full font-semibold text-white bg-gradient-to-r from-orange-500 to-pink-500 rounded-xl transition-all duration-300 group/btn hover:from-orange-600 hover:to-pink-600 hover:scale-105 hover:shadow-lg shadow-orange-500/25"
                             >
                                 View Project
@@ -280,8 +279,7 @@ export default function Project() {
                             </div>
 
                             <Link
-                                href="https://www.figma.com/proto/Kuiv2d7OMwlpdwfazMiaIy/Find-IT?type=design&node-id=848-24167&t=urp1Tnr5mDFLb8iY-0&scaling=scale-down&page-id=824%3A21978&starting-point-node-id=848%3A24167&show-proto-sidebar=1&fuid=890212016972465992"
-                                target="_blank"
+                                href="/portfolio/neosen"
                                 className="inline-flex justify-center items-center px-6 py-3 w-full font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl transition-all duration-300 group/btn hover:from-blue-600 hover:to-purple-600 hover:scale-105 hover:shadow-lg shadow-blue-500/25"
                             >
                                 View Project
@@ -325,8 +323,7 @@ export default function Project() {
                             </div>
 
                             <Link
-                                href="https://www.figma.com/proto/wgdTrZLT8oZuf6tshohjbZ/Galang-Pitchdeck?type=design&t=2hT6pwMZl5LFGkvp-0&scaling=contain&page-id=0%3A1&node-id=1-5&fuid=890212016972465992"
-                                target="_blank"
+                                href="/portfolio/galang"
                                 className="inline-flex justify-center items-center px-6 py-3 w-full font-semibold text-white bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl transition-all duration-300 group/btn hover:from-green-600 hover:to-emerald-600 hover:scale-105 hover:shadow-lg shadow-green-500/25"
                             >
                                 View Project

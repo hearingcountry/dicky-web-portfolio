@@ -2,10 +2,10 @@ const navigation = {
     main: [
         { name: "About", href: "/about" },
         { name: "Posts", href: "/post" },
-        { name: "Resume", href: "#" },
-        { name: "Project", href: "/project" },
-        { name: "Accessibility", href: "#" },
-        { name: "Partners", href: "#" },
+        { name: "Resume", href: "https://drive.google.com/file/d/1mwoCJFqmqFsVqe4Qcj7zyTX2y8fi6itu/view?usp=drive_link" },
+        { name: "Portfolio", href: "/portfolio" },
+        { name: "Awards", href: "/about#awards" },
+        { name: "Experience", href: "/about#experience" },
     ],
     social: [
         {
@@ -51,8 +51,8 @@ export default function Footer() {
     let currentYear = new Date().getFullYear();
     return (
         <footer className="flex-col bg-white">
-            <hr className="mx-auto border max-w-7xl" />
-            <div className="px-6 py-12 mx-auto overflow-hidden max-w-7xl lg:px-8">
+            <hr className="mx-auto max-w-7xl border" />
+            <div className="overflow-hidden px-6 py-12 mx-auto max-w-7xl lg:px-8">
                 <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
                     {navigation.main.map((item) => (
                         <div key={item.name} className="pb-6">

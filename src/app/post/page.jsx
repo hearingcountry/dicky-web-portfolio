@@ -8,11 +8,11 @@ export const metadata = {
 export default function Post() {
     return (
         <main className="flex flex-col justify-between items-center min-h-screen">
-            <div className="pb-16 mt-12 bg-white">
+            <div className="pb-16 mt-12 bg-white md:mt-24">
                 <div className="px-6 mx-auto max-w-7xl lg:px-8">
                     <div className="mx-auto max-w-2xl lg:max-w-4xl">
-                        <h2 className="text-3xl font-bold tracking-tight lg:text-5xl md:text-4xl text-zinc-700">From the blog</h2>
-                        <p className="mt-2 text-lg leading-8 text-zinc-500">Learn how to grow your business with our expert advice.</p>
+                        <h2 className="text-3xl font-bold tracking-tight lg:text-5xl md:text-4xl text-zinc-700">Coming Soon</h2>
+                        {/* <p className="mt-2 text-lg leading-8 text-zinc-500">Learn how to grow your business with our expert advice.</p>
                         <div className="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
                             {posts.map((post) => (
                                 <article key={post.id} className="flex isolate relative flex-col gap-8 md:flex-row">
@@ -41,7 +41,7 @@ export default function Post() {
                                     </div>
                                 </article>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

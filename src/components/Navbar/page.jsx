@@ -110,11 +110,11 @@ export default function Navbar() {
 
                                 {/* Work Together Button - Fixed Animation */}
                                 <a
-                                    href="mailto:dicky.suryananda@gmail.com"
-                                    className="overflow-hidden relative px-6 py-3 text-sm font-medium text-white bg-orange-500 rounded-md transition-all duration-300 group hover:bg-orange-600 hover:shadow-lg hover:scale-105"
+                                    href="mailto:dicky@halosurya.com"
+                                    className="overflow-hidden relative px-6 py-3 text-sm font-medium text-white bg-orange-500 rounded-md border transition-all duration-300 group hover:bg-green-100 hover:shadow-sm hover:border-green-500"
                                 >
                                     <span className="block relative z-10 transition-opacity duration-300 group-hover:opacity-0">Work Together</span>
-                                    <span className="flex absolute inset-0 justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">Let&apos;s Collaborate</span>
+                                    <span className="flex absolute inset-0 justify-center items-center opacity-0 transition-opacity duration-300 group-hover:text-green-500 group-hover:opacity-100">Let&apos;s Collaborate</span>
                                 </a>
                             </div>
                         </div>
@@ -183,10 +183,10 @@ export default function Navbar() {
                             <a
                                 href="mailto:dicky.suryananda@gmail.com"
                                 onClick={() => setIsMenuOpen(false)}
-                                className="overflow-hidden relative px-8 py-4 text-lg font-semibold text-white bg-orange-500 rounded-lg transition-all duration-300 group hover:bg-orange-600 hover:shadow-lg hover:scale-105"
+                                className="overflow-hidden relative px-8 py-4 text-lg font-semibold text-white bg-orange-500 rounded-lg border transition-all duration-300 group hover:bg-green-100 hover:shadow-sm hover:border-green-500"
                             >
                                 <span className="block relative z-10 transition-opacity duration-300 group-hover:opacity-0">Work Together</span>
-                                <span className="flex absolute inset-0 justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">Let&apos;s Collaborate</span>
+                                <span className="flex absolute inset-0 justify-center items-center opacity-0 transition-opacity duration-300 group-hover:text-green-500 group-hover:opacity-100">Let&apos;s Collaborate</span>
                             </a>
                         </div>
                     </div>
