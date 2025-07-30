@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ComjamDark from "../../image/ComjamDark.webp";
+import Taracover from "../../image/project/tara-cover.webp";
 
 export default function Section2() {
     return (
@@ -14,10 +14,6 @@ export default function Section2() {
             <div className="relative px-6 mx-auto max-w-7xl lg:px-8">
                 {/* Enhanced Header */}
                 <div className="mb-8 text-center">
-                    <div className="inline-flex items-center px-4 py-2 mb-6 bg-gradient-to-r rounded-full border backdrop-blur-sm from-orange-500/20 to-red-500/20 border-orange-500/30">
-                        <span className="mr-3 w-2 h-2 bg-orange-400 rounded-full animate-pulse"></span>
-                        <span className="text-sm font-semibold tracking-wide text-orange-300">Professional Work</span>
-                    </div>
                     <h2 className="mb-4 text-4xl font-bold md:text-5xl lg:text-6xl">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-100 to-white">Featured</span>
                         <span className="ml-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-400">Projects</span>
@@ -42,7 +38,7 @@ export default function Section2() {
                                             <div className="mr-3 w-3 h-3 bg-gradient-to-r from-orange-500 to-red-500 rounded-full animate-pulse"></div>
                                             <span className="text-sm font-semibold tracking-wide text-gray-600 uppercase">Featured Project</span>
                                         </div>
-                                        <h3 className="mb-4 text-3xl font-bold text-gray-800 transition-colors duration-300 md:text-4xl lg:text-5xl group-hover:text-gray-900">Rapspoint</h3>
+                                        <h3 className="mb-4 text-3xl font-bold text-gray-800 transition-colors duration-300 md:text-4xl lg:text-5xl group-hover:text-gray-900">Tara - Teman Netra</h3>
                                         <div className="w-20 h-1.5 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 rounded-full shadow-lg"></div>
                                     </div>
 
@@ -50,11 +46,11 @@ export default function Section2() {
                                     <div className="block lg:hidden">
                                         <div className="relative mx-auto w-full max-w-md">
                                             <div className="overflow-hidden relative bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl border shadow-2xl border-gray-200/50">
-                                                <Image src={ComjamDark} alt="Rapspoint Dashboard" width={600} height={400} className="object-cover w-full h-auto transition-transform duration-500 group-hover:scale-105" />
+                                                <Image src={Taracover} alt="Tara Cover" width={600} height={400} className="object-cover w-full h-auto transition-transform duration-500 group-hover:scale-105" />
                                                 <div className="absolute inset-0 bg-gradient-to-t via-transparent to-transparent from-black/10"></div>
 
                                                 {/* Mobile Achievement Badge */}
-                                                <div className="absolute top-4 left-4 px-3 py-1.5 bg-gradient-to-r from-green-500 to-emerald-500 text-white text-xs font-semibold rounded-full shadow-lg">✓ Live Project</div>
+                                                <div className="absolute top-4 left-4 px-3 py-1.5 bg-gradient-to-r from-green-500 to-emerald-500 text-white text-xs font-semibold rounded-full shadow-lg">🚀 3rd Winner 4C UX Competition</div>
                                             </div>
                                             {/* Enhanced Mobile Floating Elements */}
                                             <div className="absolute -top-3 -right-3 w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl opacity-70 blur-xl"></div>
@@ -64,46 +60,20 @@ export default function Section2() {
 
                                     {/* Enhanced Description */}
                                     <div className="space-y-4">
-                                        <p className="text-sm font-medium leading-relaxed text-gray-700">
-                                            A comprehensive platform designed to streamline business operations with intuitive user interface and powerful functionality. Built with modern technologies and user-centered design principles.
+                                        <p className="text-sm leading-7 text-gray-700">
+                                            A mobile learning platform specifically developed to support students with visual impairments or disabilities, offering accessible features such as screen reader compatibility, voice navigation,
+                                            and adaptive learning content to ensure an inclusive and effective educational experience.
                                         </p>
-
-                                        {/* Additional Features List */}
-                                        <div className="grid grid-cols-1 gap-2 text-sm text-gray-600 sm:grid-cols-2">
-                                            <div className="flex items-center">
-                                                <svg className="mr-2 w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                                </svg>
-                                                User-Centered Design
-                                            </div>
-                                            <div className="flex items-center">
-                                                <svg className="mr-2 w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                                </svg>
-                                                Modern Technologies
-                                            </div>
-                                            <div className="flex items-center">
-                                                <svg className="mr-2 w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                                </svg>
-                                                Scalable Architecture
-                                            </div>
-                                            <div className="flex items-center">
-                                                <svg className="mr-2 w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                                </svg>
-                                                Performance Optimized
-                                            </div>
-                                        </div>
                                     </div>
 
                                     {/* Enhanced CTA Button */}
                                     <div className="flex flex-col gap-4 sm:flex-row">
                                         <Link
-                                            href="/portfolio"
+                                            href="https://www.figma.com/proto/b86GR8eEEKJ78LqUPpvN3Q/TARA--Copy-?page-id=0%3A1&node-id=1-2&viewport=398%2C354%2C0.36&t=ACxUP8MQamtJUCoS-1&scaling=contain&content-scaling=fixed"
+                                            target="_blank"
                                             className="px-8 py-4 text-sm font-semibold text-center text-white rounded-md border border-orange-500 bg-primary-hover bg-primary lg:text-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-100"
                                         >
-                                            Show Portfolio{" "}
+                                            Read More{" "}
                                         </Link>
                                     </div>
                                 </div>
@@ -114,16 +84,16 @@ export default function Section2() {
                                 <div className="relative mx-auto w-full max-w-lg">
                                     {/* Enhanced Main Image Container */}
                                     <div className="overflow-hidden relative bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl border shadow-2xl transition-transform duration-700 border-gray-200/50 group-hover:scale-105">
-                                        <Image src={ComjamDark} alt="Rapspoint Dashboard" width={600} height={400} className="object-cover w-full h-auto transition-all duration-500 group-hover:brightness-110" />
+                                        <Image src={Taracover} alt="Tara Cover" width={600} height={400} className="object-cover w-full h-auto transition-all duration-500 group-hover:brightness-110" />
 
                                         {/* Enhanced Overlay Gradient */}
                                         <div className="absolute inset-0 bg-gradient-to-t via-transparent to-transparent transition-all duration-300 from-black/10 group-hover:from-black/5"></div>
 
                                         {/* Achievement Badge */}
-                                        <div className="absolute top-6 left-6 px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-green-500 to-emerald-500 rounded-full shadow-lg">✓ Live Project</div>
+                                        <div className="absolute top-6 left-6 px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-green-500 to-emerald-500 rounded-full shadow-lg">🚀 3rd Winner 4C UX Competition</div>
 
                                         {/* Stats Badge */}
-                                        <div className="absolute bottom-6 left-6 px-4 py-2 text-sm font-semibold text-gray-800 rounded-full border border-gray-200 shadow-lg backdrop-blur-sm bg-white/90">🚀 Active Users: 10K+</div>
+                                        <div className="absolute bottom-6 left-6 px-4 py-2 text-sm font-semibold text-gray-800 rounded-full border border-gray-200 shadow-lg backdrop-blur-sm bg-white/90">Competition Project</div>
                                     </div>
 
                                     {/* Enhanced Floating Elements */}

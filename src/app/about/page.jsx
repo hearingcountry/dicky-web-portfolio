@@ -151,43 +151,44 @@ export default function About() {
             </div>
 
             {/* Awards Section */}
-            <div id="awards" className="px-6 mx-auto mt-20 max-w-7xl lg:px-8">
-                <div className="mb-16 text-center">
-                    <div className="flex justify-center items-center mb-4">
-                        <span className="mr-3 text-4xl">🏆</span>
-                        <h2 className="text-4xl font-bold text-gray-900">Awards</h2>
+            <div id="awards" className="px-4 mx-auto mt-20 max-w-7xl sm:px-6 lg:px-8">
+                <div className="mb-12 text-center sm:mb-16">
+                    <div className="flex flex-col items-center mb-4 sm:flex-row sm:justify-center">
+                        <span className="mb-2 text-3xl sm:mr-3 sm:mb-0 sm:text-4xl">🏆</span>
+                        <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Awards</h2>
                     </div>
-                    <p className="text-lg text-gray-600">Recognition for excellence in design and innovation</p>
+                    <p className="text-base text-gray-600 sm:text-lg">Recognition for excellence in design and innovation</p>
                 </div>
 
-                <div className="mx-auto space-y-6 max-w-5xl">
+                <div className="mx-auto space-y-4 max-w-5xl sm:space-y-6">
                     {awards.map((award, index) => (
                         <div
                             key={award.title}
-                            className="overflow-hidden relative bg-gradient-to-r from-white to-gray-50 rounded-2xl border border-gray-200 shadow-sm transition-all duration-300 group hover:shadow-lg hover:border-orange-200"
+                            className="overflow-hidden relative bg-gradient-to-r from-white to-gray-50 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 group hover:shadow-lg hover:border-orange-200 sm:rounded-2xl"
                         >
-                            <div className="p-8">
-                                <div className="flex gap-6 justify-between items-start">
-                                    <div className="flex-1">
-                                        <div className="flex items-center mb-3">
-                                            <span className="inline-flex items-center px-3 py-1 mr-4 text-xs font-medium text-orange-500 bg-orange-100 rounded-full">{award.position}</span>
+                            <div className="p-4 sm:p-6 lg:p-8">
+                                <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 sm:justify-between sm:items-start">
+                                    <div className="flex-1 min-w-0">
+                                        <div className="flex flex-col gap-2 mb-3 sm:flex-row sm:items-center sm:gap-0">
+                                            <span className="inline-flex items-center self-start px-2 py-1 text-xs font-medium text-orange-500 bg-orange-100 rounded-full sm:px-3 sm:mr-4">{award.position}</span>
                                             <span className="text-sm font-medium text-gray-500">{award.date}</span>
                                         </div>
-                                        <h3 className="mb-2 text-xl font-semibold text-gray-900 transition-colors duration-300 group-hover:text-orange-500">{award.title}</h3>
-                                        <p className="italic text-gray-600">Issued by {award.issuer}</p>
+                                        <h3 className="mb-2 text-lg font-semibold leading-tight text-gray-900 transition-colors duration-300 group-hover:text-orange-500 sm:text-xl">{award.title}</h3>
+                                        <p className="text-sm italic text-gray-600 sm:text-base">Issued by {award.issuer}</p>
                                     </div>
-                                    <div className="flex-shrink-0">
+                                    <div className="flex-shrink-0 mt-2 sm:mt-0">
                                         <a
                                             href={award.link}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-flex items-center px-4 py-2 text-sm font-medium text-orange-500 bg-white rounded-lg border border-orange-200 shadow-sm transition-all duration-200 hover:bg-orange-50 hover:border-orange-300 hover:shadow group"
+                                            className="inline-flex justify-center items-center px-3 py-2 w-full text-xs font-medium text-orange-500 bg-white rounded-lg border border-orange-200 shadow-sm transition-all duration-200 hover:bg-orange-50 hover:border-orange-300 hover:shadow group sm:w-auto sm:px-4 sm:text-sm"
                                         >
-                                            <svg className="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <svg className="mr-1 w-3 h-3 sm:mr-2 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                                             </svg>
-                                            View Certificate
-                                            <svg className="ml-1 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <span className="hidden sm:inline">View Certificate</span>
+                                            <span className="sm:hidden">Certificate</span>
+                                            <svg className="ml-1 w-2 h-2 sm:w-3 sm:h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                             </svg>
                                         </a>
